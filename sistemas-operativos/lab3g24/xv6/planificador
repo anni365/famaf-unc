@@ -1,0 +1,2 @@
+
+El planificador de xv6 ejecuta un ciclo simple: encuentra un proceso para ejecutarlo, lo ejecuta hasta que se detenga y repite esto indefinadamente. 

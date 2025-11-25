@@ -1,0 +1,1 @@
+#include "types.h"#include "user.h"intmain(int argc, char *argv[]){  int i, perms;  if(argc <= 2){    printf(1, "Usage: chmod PERMS FILE...\n");    exit();  }  perms = atoi(argv[1]);  for(i = 2; i < argc; i++){    if((chmod(argv[i], perms)) < 0)      printf(1, "Cannot chmod %s\n", argv[i]);  }  exit();}
